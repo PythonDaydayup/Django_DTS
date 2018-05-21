@@ -1,0 +1,33 @@
+{% extends 'adminlte/lib/_main_sidebar.html' %}
+
+{% block nav_links %}
+<li>
+    <a href="#">
+        <i class="fa fa-dashboard"></i> <span>我的待办</span>
+    </a>
+    <a href="#">
+        <i class="fa fa-dashboard"></i> <span>处理过的问题</span>
+    </a>
+    <a href="#">
+        <i class="fa fa-dashboard"></i> <span>我创建的问题</span>
+    </a>
+    <a href="#">
+        <i class="fa fa-dashboard"></i> <span>抄送我的问题</span>
+    </a>
+</li>
+<li class="treeview">
+    <a href="#">
+        <i class="fa fa-group"></i> <span>问题单浏览</span>
+        <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+        </span>
+    </a>
+    <ul class="treeview-menu">
+        <li>
+            <a href="#">
+                <i class="fa fa-user"></i> 每日问题报表
+            </a>
+        </li>
+    </ul>
+</li>
+{% endblock nav_links %}
